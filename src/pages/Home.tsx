@@ -1,7 +1,9 @@
 import React from "react";
+import { useIntl } from "react-intl";
 
 const Home = () => {
-  return <div>Projects</div>;
+  const intl = useIntl();
+  return <div>{intl.formatMessage({ id: "welcome" })}</div>;
 };
 
 export default Home;
